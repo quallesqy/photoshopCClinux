@@ -120,6 +120,30 @@ function replacement(){
 }
 
 function install_photoshopSE(){
+    #local filename="photoshopCC-V19.1.6-2018x64.tgz"
+    #local filemd5="b63f6ed690343ee12b6195424f94c33f"
+    # local filelink="https://www.dropbox.com/s/dwfyzq2ie6jih7g/photoshopCC-V19.1.6-2018x64.tgz?dl=1"
+    #local filelink="https://victor.poshtiban.io/p/gictor/photoshopCC/photoshopCC-V19.1.6-2018x64.tgz"
+    #local filepath="$CACHE_PATH/$filename"
+
+    #download_component $filepath $filemd5 $filelink $filename
+
+    #mkdir "$RESOURCES_PATH/photoshopCC"
+    #show_message "extract photoshop..."
+    #tar -xzf "$filepath" -C "$RESOURCES_PATH/photoshopCC"
+
+    #echo "===============| photoshop CC v19 |===============" >> "$SCR_PATH/wine-error.log"
+    #show_message "install photoshop..."
+    #show_message "\033[1;33mPlease don't change default Destination Folder\e[0m"
+
+    #wine "$RESOURCES_PATH/photoshopCC/photoshop_cc.exe" &>> "$SCR_PATH/wine-error.log" || error "sorry something went wrong during photoshop installation"
+
+    #notify-send "photoshop installed successfully" -i "photoshop"
+    #show_message "photoshopCC V19 x64 installed..."
+    unset filename filemd5 filelink filepath
+}
+
+function install_photoshopSE_old(){
     local filename="photoshopCC-V19.1.6-2018x64.tgz"
     local filemd5="b63f6ed690343ee12b6195424f94c33f"
     # local filelink="https://www.dropbox.com/s/dwfyzq2ie6jih7g/photoshopCC-V19.1.6-2018x64.tgz?dl=1"
